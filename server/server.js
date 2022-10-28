@@ -12,7 +12,7 @@ app.get("/home", (req, res) => {
     slackUsername: "Aribaba",
     backend: true,
     age: 21,
-    bio: "Aspiring pro dev",
+    bio: "Aspiring pro dev.",
   });
 });
 
