@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const port = 7000;
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -17,5 +19,5 @@ app.get("/home", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`CORS enabled sample app listening on port ${port}`);
 });
