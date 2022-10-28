@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/home", (req, res) => {
+app.get("/backend/track1", (req, res) => {
   console.log(req.body);
   res.json({
     slackUsername: "Aribaba",
